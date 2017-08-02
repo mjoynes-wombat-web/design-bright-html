@@ -1,0 +1,11 @@
+<main>
+  <form action="index.html">
+    <h1>Become an Advisor</h1>
+    {{> form-name-email}}
+    <label for="position">Current Position: <span class="required">*</span></label>
+    <input type="text" name="position" id="position" required>
+    <label for="experience">Years of Experience: <span class="required">*</span></label>
+    <input type="number" name="experience" id="experience" required>
+    <button type="submit">Submit Request</button>
+  </form>
+</main>

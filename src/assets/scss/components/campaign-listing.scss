@@ -1,0 +1,23 @@
+$graphite: #808080;
+
+.timeline span.funded {
+  display: block;
+}
+
+main.campaigns article.campaign {
+  margin-bottom: 1.25rem;
+
+  div.main-image {
+    overflow: hidden;
+    max-height: 250px;
+    display: flex;
+    align-items: center;
+    border: 0.125rem solid $graphite;
+    padding: 0;
+    margin: 0 1rem;
+    width: calc(100% - 1rem);
+    img {
+      min-width: 100%;
+    }
+  }
+}
