@@ -1,17 +1,17 @@
+
 <article class="campaign">
 <div class="row align-justify">
-      <h2 class="shrink columns">{{ campaign-title}}</h2>
-      <p class="details days shrink columns">{{ campaign-days }}</p>
+      <h2 class="shrink columns"><span class="underlined">{{ campaign-title}}</span></h2>
+      <p class="days shrink columns"><span class="details">{{ campaign-days }}</span></p>
       <p class="small-12 columns">{{ campaign-description }}</p>
-      <div class="small-12 columns expand main-image">
+      <div class="main-image">
             <img src="assets/img/veteran.jpg" alt="{{ campaign-image-alt }}">
       </div>
+      <span class="timeline"><span class="funded" style="width: {{ campaign-funded-progress }};" ></span></span>
 </div>
- <p class="timeline small-12 columns"><span class="funded" style="width: {{ campaign-funded-progress }};" ></span></p>
- <div class="row align-justify">
-      <p class="details funded shrink columns">{{ campaign-funded-progress }} Funded</p>
-      <p class="details funding shrink columns">{{ campaign-funding }}</p>
- </div>
+<div class="row align-justify">
+      <p class="funded shrink columns"><span class="details">{{ campaign-funded-progress }} Funded</span></p>
+      <p class="funding shrink columns"><span class="details">{{ campaign-funding }}</span></p>
+</div>
 </article>
-
  
