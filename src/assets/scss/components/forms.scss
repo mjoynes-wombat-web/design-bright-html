@@ -2,7 +2,7 @@ $light-graphite: #999999;
 $maui-orange: #ffbe00;
 $graphite: #808080;
 
-label {
+label, legend {
   color: $light-graphite;
   font-size: 1.25rem;
   font-family: 'Lato', sans-serif;  
@@ -14,9 +14,20 @@ label {
   }
 }
 
-input[type="text"], input[type="number"] {
+input[type="text"], input[type="number"], select {
   color: $graphite;
   font-family: 'Lato', sans-serif;
   font-size: 1.375rem;
   height: 2.75rem;
+  line-height: normal;
+}
+
+fieldset {
+  label{
+
+  }
+}
+
+input[type="checkbox"] {
+  transform: scale(1.375);
 }

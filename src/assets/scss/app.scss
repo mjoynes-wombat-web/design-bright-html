@@ -176,3 +176,11 @@ button, button[type='submit'] {
     }
   }
 }
+
+hr {
+    margin: 0 auto;
+    height: 0.2rem;
+    border-bottom: none;
+    background: url('../img/Grey Line.png');
+    background-size: 100% 100%;
+  }
