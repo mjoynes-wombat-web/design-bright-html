@@ -76,6 +76,9 @@ body {
   font-weight: 300;
   color: $graphite;
   font-size: 1rem;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom:130px;
 }
 
 header {
@@ -258,6 +261,9 @@ footer {
   padding-top: 1.25rem;
   height: auto;
   background-repeat: none;
+  position: absolute;
+  bottom:0;
+  width: 100%;
 
   a {
     &:link, &:visited, &:link:hover, &:visited:hover {
