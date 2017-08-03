@@ -1,7 +1,8 @@
+$graphite: #808080;
+
 header {
   background-image: url("../img/paper.png");
   padding: 1.125rem 0;
-  margin-bottom: 1.875rem;
   position: relative;
 
   div.row {
@@ -96,9 +97,10 @@ header {
 
   div.orange-line {
     background-image: url("../img/Orange Line.png");
+    background-position-x: 50%;
     height: 17px;
     position: absolute;
     width: 100%;
-    bottom: -7px;
+    bottom: -6px;
   }
 }
