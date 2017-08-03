@@ -1,0 +1,98 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Bright</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body>
+    <header>
+      <script>
+        window.onload = function() {
+          var search = document.getElementById("search");
+    
+          window.addEventListener('click', function() {
+            if (document.activeElement == search) {
+              search.setAttribute('value', '');
+            } else {
+              search.setAttribute('value', 'Search');
+            }
+          })
+        }
+      </script>
+      <div class="row align-bottom">
+        <div class="logo small-5 columns">
+          <a href="index.html">
+            <img src="assets/img/logo.png" alt="Design Bright Logo">
+          </a>
+        </div>
+        <nav class="columns">
+          <ul class="row align-right">
+            <li class="shrink columns"><a href="browse.html">Explore</a></li>
+            <li class="small-4 large-2 columns search">
+              <form action="browse.html">
+                <input type="search" name="search" id="search" value="Search">
+                <button type="submit"></button>
+              </form>
+            </li>
+            <li class="user shrink"><a href=""></a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="orange-line"></div>
+    </header>
+    <main class="browse">
+      <section class="row">
+          <h1 class="columns small-12">Campaigns by <span class="link">Trending <span class="dropdown"></span></span> </h1>
+        <hr class="columns small-11 small-centered">
+      </section>
+    
+     
+     <article class="campaign">
+     <div class="row align-justify">
+           <h2 class="shrink columns"><span class="underlined">Homes for Veterans</span></h2>
+           <p class="days shrink columns"><span class="details">25 Days Left</span></p>
+           <p class="small-12 columns">Fyodor Pavlovitch got excited and pathetic, though it was perfectly clear to every one by now that he was playing a part again. Yet Miüsov was stung by his words.</p>
+           <div class="main-image">
+                 <img src="assets/img/veteran.jpg" alt="Homes For Veterans Main Image">
+           </div>
+           <span class="timeline"><span class="funded" style="width: 48%;" ></span></span>
+     </div>
+     <div class="row align-justify">
+           <p class="funded shrink columns"><span class="details">48% Funded</span></p>
+           <p class="funding shrink columns"><span class="details">$65,000</span></p>
+     </div>
+     </article>
+       
+     <article class="campaign">
+     <div class="row align-justify">
+           <h2 class="shrink columns"><span class="underlined">Homes for Veterans</span></h2>
+           <p class="days shrink columns"><span class="details">25 Days Left</span></p>
+           <p class="small-12 columns">Fyodor Pavlovitch got excited and pathetic, though it was perfectly clear to every one by now that he was playing a part again. Yet Miüsov was stung by his words.</p>
+           <div class="main-image">
+                 <img src="assets/img/veteran.jpg" alt="Homes For Veterans Main Image">
+           </div>
+           <span class="timeline"><span class="funded" style="width: 48%;" ></span></span>
+     </div>
+     <div class="row align-justify">
+           <p class="funded shrink columns"><span class="details">48% Funded</span></p>
+           <p class="funding shrink columns"><span class="details">$65,000</span></p>
+     </div>
+     </article>
+      </main>
+    <footer>
+      <div class="row">
+        <div class="columns small-6"><a href="advisor.html">Become an Advisor</a></div>
+        <div class="columns small-6"><a href="help.html">Need Help?</a></div>
+        <div class="columns small-12">
+          <p>© 2017 by Simeon Smith</p>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
