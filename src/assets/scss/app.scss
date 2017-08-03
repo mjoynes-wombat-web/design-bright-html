@@ -64,7 +64,9 @@
 }
 
 @import 'components/browse';
+@import 'components/header';
 @import 'components/campaign-listing';
+@import 'components/footer';
 
 $blue-hydrangea: #4097ff;
 $light-hydrangea: #8CC0FF;
@@ -79,111 +81,6 @@ body {
   position: relative;
   min-height: 100vh;
   padding-bottom:130px;
-}
-
-header {
-  background-image: url("../img/paper.png");
-  padding: 1.125rem 0;
-  margin-bottom: 1.875rem;
-  position: relative;
-
-  div.row {
-    margin: auto;
-
-    nav {
-      padding: 0 0 0.76% 0;
-
-      ul {
-        position: relative;
-        margin:0;
-
-        &.row.align-right {
-          max-width: 100%;
-          margin:0;
-        }
-
-        li {
-          display: inline-block;
-          padding: 0;
-          text-align: center;
-          margin-right: 0.6875rem;
-
-          &.search {
-            form {
-              height:0;
-            }
-            button {
-              display:none;
-            }
-          }
-
-          #search {
-            border: none;
-            box-shadow: none;
-            border-radius: 0.3rem;
-            background: url('../img/search.svg') rgba(255, 255, 255, 0.5);
-            background-position-x: calc(100% - 0.55rem);
-            background-position-y: calc(100% - 50%);
-            background-size:1.5625rem;
-            background-repeat: no-repeat;
-            color: #808080;
-
-            &:hover {
-              background: url('../img/search-drk.svg') rgba(255, 255, 255, 0.7);
-              background-position-x: calc(100% - 0.55rem);
-              background-position-y: calc(100% - 50%);
-              background-size:1.5625rem;
-              background-repeat: no-repeat;
-            }
-
-            &:focus, &:focus:hover {
-              position: absolute;
-              left:0;
-              background: url('../img/search-wht.svg') #A6A6A6;
-              background-position-x: calc(100% - 0.55rem);
-              background-position-y: calc(100% - 50%);
-              background-size:1.5625rem;
-              background-repeat: no-repeat;
-              color: #ffffff;
-            }
-          }
-          a, #search {
-            display: inline-block;
-            font-size: 1.5rem;
-            line-height: 1.5rem;
-            padding: .5rem;
-            font-weight: 300;
-
-            &:link, &:active, &:visited {
-              color: $graphite;
-              border: none;
-            }
-
-            &:hover{
-              color: darken($graphite, 20);
-            }
-          }
-
-          &.user {
-            font-family: 'font-awesome-light';
-            font-size: 1.5625rem;
-          }
-        }
-      }
-    }
-  }
-
-  .logo {
-    max-width:320px;
-  }
-
-  div.orange-line {
-    background-image: url("../img/Orange Line.png");
-    height: 17px;
-    position: absolute;
-    width: 100%;
-    bottom: -7px;
-  }
 }
 
 main {
@@ -249,60 +146,5 @@ main {
 
   section {
     margin-bottom: 2rem;
-  }
-}
-
-footer {
-  background-image: url('../img/Grey Stripe.png');
-  background-position: calc(100% - 50%);
-  background-size: cover;
-  color: #fff;
-  margin-top: 3rem;
-  padding-top: 1.25rem;
-  height: auto;
-  background-repeat: none;
-  position: absolute;
-  bottom:0;
-  width: 100%;
-
-  a {
-    &:link, &:visited, &:link:hover, &:visited:hover {
-      font-size: 1.25rem;
-      color: #ffffff;
-      border-bottom: none;
-      text-shadow:
-   -0.25px -0.25px 0 #fff,  
-    0.25px -0.25px 0 #fff,
-    -0.25px 0.25px 0 #fff,
-     0.25px 0.25px 0 #fff;
-    }
-
-    &:link:hover, &visited:hover {
-      border-bottom: 0.06rem solid #ffffff;
-    }
-  }
-  div, p {
-    text-align:center;
-  }
-
-  p {
-    margin-bottom:0.5rem;
-  }
-}
-
-main.campaigns {
-  h1 {
-    margin-bottom: 1.25rem;
-  }
-  hr {
-    margin: 0 auto;
-    height: 0.2rem;
-    border-bottom: none;
-    background: url('../img/Grey Line.png');
-    background-size: 100% 100%;
-  }
-
-  > section:first-child{
-    margin-bottom:1.25rem;
   }
 }

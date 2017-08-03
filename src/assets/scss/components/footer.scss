@@ -1,0 +1,37 @@
+footer {
+  background-image: url('../img/Grey Stripe.png');
+  background-position: calc(100% - 50%);
+  background-size: cover;
+  color: #fff;
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  height: auto;
+  background-repeat: none;
+  position: absolute;
+  bottom:0;
+  width: 100%;
+
+  a {
+    &:link, &:visited, &:link:hover, &:visited:hover {
+      font-size: 1.25rem;
+      color: #ffffff;
+      border-bottom: none;
+      text-shadow:
+   -0.25px -0.25px 0 #fff,  
+    0.25px -0.25px 0 #fff,
+    -0.25px 0.25px 0 #fff,
+     0.25px 0.25px 0 #fff;
+    }
+
+    &:link:hover, &visited:hover {
+      border-bottom: 0.06rem solid #ffffff;
+    }
+  }
+  div, p {
+    text-align:center;
+  }
+
+  p {
+    margin-bottom:0.5rem;
+  }
+}
